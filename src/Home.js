@@ -18,7 +18,7 @@ const Home = () => {
             <img
               className="logo"
               style={{ color: "white" }}
-              src="../images/aces.png"
+              src="../images/Aces.png"
               alt="logo-img"
             />
           </a>
