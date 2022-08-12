@@ -71,9 +71,7 @@ const Sheet = () => {
     }
     if (event.target.files.length) {
       const inputFile = event.target.files[0];
-      console.log(inputFile.name);
       const fileExtension = inputFile?.type.split("/")[1];
-      console.log(fileExtension);
       if (allowedExtensions.includes(fileExtension)) {
         setFileNames([...fileNames, inputFile]);
       }
@@ -135,7 +133,7 @@ const Sheet = () => {
 
   //Delete Values
   const deleteValues = (e) => {
-    console.log(e.target.id);
+  
     if (e.currentTarget.id === "row") {
       const tempSheets = sheets.map((s) =>
         s.name === sheetParam ? { ...s, row: {} } : s
