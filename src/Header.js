@@ -29,14 +29,14 @@ const Header = () => {
   let navigate = useNavigate();
   function fileInput(e) {
     if (e.target.value === "Exit") {
-      console.log("exit");
+   
       navigate("/", { replace: true });
     }
     if (e.target.value === "New") {
       console.log("new");
     }
     if (e.target.value === "Save") {
-      console.log("save");
+   
       let obj = {};
       let allSheetsData = workbook;
       console.log(workbook);
@@ -49,7 +49,7 @@ const Header = () => {
       obj["realdata"] = csvArray;
       let content = JSON.stringify(obj);
       let blob = new Blob([content], { type: "application/json" });
-      console.log(blob);
+     
       saveAs(blob, "File.owbx");
     }
   }
