@@ -32,7 +32,7 @@ const Datasource = () => {
     var x = document.getElementById("interSection");
     if (x.style.display === "none") {
       getIntersection(workbook, sheet1, dragValue);
-      console.log("enter");
+//       console.log("enter");
       x.style.display = "block";
     } else {
       x.style.display = "none";
@@ -73,7 +73,7 @@ const Datasource = () => {
       );
       const updatedWorkbook = { ...wb };
       updatedWorkbook[`${sh1}_${sh2}`] = joinedSheet;
-      console.log(updatedWorkbook);
+//       console.log(updatedWorkbook);
       setWorkbook(updatedWorkbook);
     }
   };
