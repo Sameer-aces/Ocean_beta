@@ -57,7 +57,7 @@ const ImportExcel = (props) => {
     const data = await myFile.arrayBuffer();
 
     const mySheetData = readDataFromExcel(data);
-    console.log(mySheetData);
+//     console.log(mySheetData);
     setFileName(myFile.name.split(".").slice(0, -1).join("."));
     setWorkbook(mySheetData);
     setSelectedSheet(Object.keys(mySheetData)[0]);
